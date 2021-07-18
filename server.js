@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 if (process.env.NODE_ENV === "production"){
   app.use(express.static("build"));
   app.get("*", (req, res) => {

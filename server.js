@@ -36,7 +36,7 @@ const contactEmail = nodemailer.createTransport({
     }
   });
 
-  router.post("/", (req, res) => {
+  router.post("/ContactPage", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message; 

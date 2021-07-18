@@ -12,7 +12,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
+app.use("https://christophertran.netlify.app/", router);
 app.listen(port, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({

@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(port, () => console.log("Server Running"));
-
+console.log('Our app is running on http://localhost:' + port);
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',
     auth: {

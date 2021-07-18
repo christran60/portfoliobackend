@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-
+const port = process.env.PORT
 
 // console.log("the email is:",process.env.REACT_APP_EMAIL);
 // console.log("The pw is:",process.env.REACT_APP_PASS);
@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(3000, () => console.log("Server Running"));
+app.listen(port, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',

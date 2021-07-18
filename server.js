@@ -17,7 +17,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use("/ContactPage", router);
+app.use("/", router);
 app.listen(port, () => console.log("Server Running"));
 
 const contactEmail = nodemailer.createTransport({
@@ -36,7 +36,7 @@ const contactEmail = nodemailer.createTransport({
     }
   });
 
-  router.post("/ContactPage", (req, res) => {
+  router.post("/", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message; 

@@ -21,7 +21,7 @@
       "react-app/jest"
     ]
   },
-  "engines":{
+  "engines": {
     "node": "v10.19.0"
   },
   "browserslist": {

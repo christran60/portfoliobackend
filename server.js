@@ -36,7 +36,8 @@ const contactEmail = nodemailer.createTransport({
     }
   });
 
-  router.post("https://christophertran.netlify.app/ContactPage", (req, res) => {
+  // router.post("https://christophertran.netlify.app/ContactPage", (req, res) => {
+    router.post("https://myportfoliocontactform.herokuapp.com/", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message; 

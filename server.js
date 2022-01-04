@@ -45,7 +45,7 @@ const contactEmail = nodemailer.createTransport({
     };
     contactEmail.sendMail(mail, (error) => {
       if (error) {
-        res.json({ status: "ERROR, go ahead and email me directly instead! My email is ctran209@outlook.com." });
+        res.json({ status: "Sorry there's an error with using gmail with nodemailer, go ahead and email me directly instead! My email is ctran209@outlook.com." });
       } else {
         res.json({ status: "Message Sent!" });
 
